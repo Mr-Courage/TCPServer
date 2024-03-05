@@ -69,7 +69,7 @@
       <item>
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;主机端口&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;用户端口&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
       </item>
@@ -100,6 +100,20 @@
        <widget class="QPushButton" name="disc_all_Button">
         <property name="text">
          <string>断开所有连接</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="SradioButton">
+        <property name="text">
+         <string>私聊</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="QradioButton">
+        <property name="text">
+         <string>群聊</string>
         </property>
        </widget>
       </item>
@@ -136,6 +150,19 @@
      </layout>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="clientLabel">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>当前用户：0人</string>
+   </property>
   </widget>
  </widget>
  <resources/>

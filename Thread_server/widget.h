@@ -28,6 +28,14 @@ private slots:
 
     void on_disc_one_Button_clicked();
 
+    void on_disc_all_Button_clicked();
+
+    void on_closeSerButton_clicked();
+
+    void on_startSerButton_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::Widget *ui;
     QTcpServer *server;
