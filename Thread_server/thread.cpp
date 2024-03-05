@@ -9,6 +9,9 @@ Thread::Thread(QTcpSocket *s, QObject *parent)
 
 void Thread::run()
 {
+
+
+
     connect(socket,SIGNAL(readyRead()),this,SLOT(read()),Qt::DirectConnection);
 
     connect(socket,SIGNAL(disconnected()),this,SLOT(disconnect()),Qt::DirectConnection);
@@ -26,6 +29,7 @@ void Thread::read()
 
 void Thread::disconnect()
 {
+    emit deletPort();
     this->socket->disconnectFromHost();
     this->socket->close();
     this->socket->deleteLater();

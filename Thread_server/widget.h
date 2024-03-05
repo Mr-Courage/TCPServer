@@ -23,12 +23,16 @@ public:
 private slots:
     void showRead(QByteArray buff);
     void myConnected();
+    void deletePort();
 
+
+    void on_disc_one_Button_clicked();
 
 private:
     Ui::Widget *ui;
     QTcpServer *server;
     QTcpSocket *socket;
+    QList<QTcpSocket*> ThreadList;
 
 
 //protected:

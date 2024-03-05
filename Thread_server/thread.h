@@ -13,6 +13,8 @@ public slots:
     void run();
 signals:
     void showRead(QByteArray);
+    void deletPort();
+
 
 private:
     quintptr socketDescriptor;
